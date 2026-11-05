@@ -40,6 +40,13 @@ void MX_I2C1_Init(void);
 
 /* USER CODE BEGIN Prototypes */
 
+uint8_t i2c_master_read(uint8_t slave_address, uint8_t register_address, uint8_t *data, uint8_t length);
+uint8_t i2c_master_write(uint8_t slave_address, uint8_t register_address, uint8_t *data, uint8_t length);
+uint8_t i2c_master_read_byte(uint8_t slave_address, uint8_t register_address, uint8_t *data);
+uint8_t i2c_master_write_byte(uint8_t slave_address, uint8_t register_address, uint8_t data);
+
+void I2C1_EV_Callback(void);
+
 /* USER CODE END Prototypes */
 
 #ifdef __cplusplus
