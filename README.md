@@ -1,0 +1,1 @@
+Program pre NUCLEO-F303K so senzorovou doskou X-NUCLEO-IKS01A1. Cez I2C číta teplotu a vlhkosť (HTS221) a tlak (LPS25HB), z tlaku vypočíta relatívnu výšku od zeme a dáta posiela cez USART2 (115200 Bd) vo formáte CSV do aplikácie Serial Oscilloscope.
